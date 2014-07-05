@@ -492,6 +492,14 @@ text-align: center;
 margin-top:20px;
 }
 }
+@media only screen 
+and (min-width : 769px) 
+and (max-width : 1024px) {
+    .btn-wrap{width:240px;}
+	.button{width:180px;}
+	.j-social-wrap{width: 150px;}
+}
+ 
 @media (min-width: 768px) {
   .j-discount{right: -65px;}
 }

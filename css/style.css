@@ -493,11 +493,22 @@ margin-top:20px;
 }
 }
 @media only screen 
+and (min-width : 482px) 
+and (max-width : 768px) {
+	.j-discount{display:none;}
+	.nav-tabs > li{
+		width:100%;
+	}
+	.j-prices-li{margin-left:0px;}
+}
+@media only screen 
 and (min-width : 769px) 
 and (max-width : 1024px) {
     .btn-wrap{width:240px;}
 	.button{width:180px;}
 	.j-social-wrap{width: 150px;}
+	.j-discount{display:none;}
+	
 }
  
 @media (min-width: 768px) {

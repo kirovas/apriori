@@ -1,0 +1,95 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr{margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent}
+:focus{outline:0}
+html{min-height:100%; position:relative; background:#fff}
+body{min-width:280px; font:300 16px/1.4375 'Roboto', Arial, sans-serif; color:#000}
+strong{font-weight:400}
+table{border-collapse:collapse}
+td, th{}
+a{color:#cd1212}
+a:hover{text-decoration:none}
+a img{border:none}
+p{}
+h1, h2, h3, h4, h5, h6{}
+input[type="text"], select{box-sizing:content-box; -moz-box-sizing:content-box; cursor:pointer; display:block; -webkit-appearance:none; padding:0 25px; height:50px; width:230px; font:300 16px/52px 'Roboto', Arial, sans-serif; color:#000; background:#fff; border:0; border-radius:4px}
+select{background:#fff url(images/select.png) no-repeat 245px center}
+input[type="submit"]{cursor:pointer; display:block; margin-top:40px; -webkit-appearance:none; border:0; padding:0; color:#fff; font:300 18px/41px 'Roboto', Arial, sans-serif; height:43px; width:280px; background:#00999b; border:2px solid #00999b; border-radius:1px}
+input[type="submit"]:hover{background:#fff; color:#00999b}
+
+.j-wrapper{width:1200px; margin:0 auto; position:relative}
+.j-clear{clear:both}
+.j-sprite{background:url(images/sprite.png) no-repeat -9999px -9999px}
+
+.j-header{height:435px; overflow:hidden; background:#e5decb url(images/header.jpg) no-repeat center 0; position:relative}
+.j-header:after{content:''; position:absolute; bottom:0; left:50%; margin-left:-16px; border:16px solid transparent; border-bottom-color:#fff; border-top:0}
+.j-header-big{width:522px; height:287px; position:absolute; top:88px; right:0; text-indent:-9999px; background:url(images/header.png) no-repeat 0 0}
+.j-header-logo{float:left; padding-top:12px}
+.j-header-logo img{display:block}
+.j-header-phone{float:right; color:#706f6f; font-weight:300; font-size:20px; line-height:52px; vertical-align:top; padding-top:34px}
+.j-header-phone big{font-size:52px}
+.j-header-discount{float:left; padding-top:19px; width:265px}
+.j-header-discount-inner{width:265px; height:215px; overflow:hidden; background-position:0 -94px; font-family:'Roboto Condensed'; font-size:30px; color:#fff; text-align:right; line-height:1; font-weight:300; text-transform:uppercase}
+.j-header-discount-inner small{font-size:24px; text-transform:none}
+.j-header-discount-inner big{font-size:110px}
+.j-header-discount-bottom{font-size:110px; font-size:11px; color:#666}
+.j-header-discount-bottom big{color:#cc1e42; font-size:37px; display:block; text-transform:uppercase; margin-top:-38px; margin-left:62px; font-family:'Roboto Condensed'; font-weight:300}
+
+.j-actions{text-align:center; padding-top:40px}
+.j-action{display:inline-block; vertical-align:top; width:284px; padding:0 35px; position:relative}
+.j-action:before{content:''; position:absolute; top:9px; left:0; width:2px; height:61px; background:#d2d2d2}
+.j-action:first-child:before{display:none}
+.j-action big{font-size:72px; line-height:75px;; color:#00999b; font-weight:300}
+
+.j-services{text-align:center; margin-top:35px; padding:30px 0 25px; background:#fbfaf5}
+.j-services-title{font-size:18px; line-height:23px; margin-bottom:25px}
+.j-service{display:inline-block; vertical-align:top; width:284px; padding:0 35px}
+.j-service-image{width:94px; height:94px; margin:0 auto 12px}
+.j-service-image.s1{background-position:0 0}
+.j-service-image.s2{background-position:-94px 0}
+.j-service-image.s3{background-position:-188px 0}
+
+.j-consult{background:url(images/consult.jpg) repeat-x 0 31px; color:#fff}
+.j-consult-top{height:31px; position:relative; overflow:hidden; margin-bottom:-24px}
+.j-consult-bottom{height:37px; position:relative; overflow:hidden; margin-top:-30px}
+.j-consult-top:before, .j-consult-bottom:before{content:''; position:absolute; top:0; left:0; width:50%; height:100%; margin-left:-122.5px; background:#fbfaf5}
+.j-consult-top:after, .j-consult-bottom:after{content:''; position:absolute; top:0; right:0; width:50%; height:100%; margin-right:-122.5px; background:#fbfaf5}
+.j-consult-bottom:before, .j-consult-bottom:after{background:#f7f5f2; border-top:1px solid #ececec}
+.j-consult-top-center{width:245px; height:31px; margin:0 auto; background-position:0 -309px}
+.j-consult-bottom-center{width:245px; height:37px; margin:0 auto; background-position:0 -340px}
+.j-consult-button-wrap{position:relative; z-index:10}
+.j-consult-button{position:relative; display:block; width:229px; margin:0 auto; text-align:center; border-radius:54px; color:#fff; text-decoration:none; font-size:24px; text-transform:uppercase; text-shadow:0 1px 0 #fff; background:#e22b5e; background:-moz-linear-gradient(top,  #e22b5e 0%, #c11232 100%); background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#e22b5e), color-stop(100%,#c11232)); background:-webkit-linear-gradient(top,  #e22b5e 0%,#c11232 100%); background:-o-linear-gradient(top,  #e22b5e 0%,#c11232 100%); background:-ms-linear-gradient(top,  #e22b5e 0%,#c11232 100%); background:linear-gradient(to bottom,  #e22b5e 0%,#c11232 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#e22b5e', endColorstr='#c11232',GradientType=0 ); box-shadow:inset 0 1px 0 rgba(255,255,255,0.42); line-height:54px; height:52px; border:1px solid #c51337}
+.j-consult-button.open{background:#e5e1d9; background:-moz-linear-gradient(top,  #e5e1d9 0%, #f5f3f0 100%); background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e1d9), color-stop(100%,#f5f3f0)); background:-webkit-linear-gradient(top,  #e5e1d9 0%,#f5f3f0 100%); background:-o-linear-gradient(top,  #e5e1d9 0%,#f5f3f0 100%); background:-ms-linear-gradient(top,  #e5e1d9 0%,#f5f3f0 100%); background:linear-gradient(to bottom,  #e5e1d9 0%,#f5f3f0 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e1d9', endColorstr='#f5f3f0',GradientType=0 ); color:#cc1e42; border-color:#cfc8bc; box-shadow:inset 0 1px 0 #fff}
+.j-consult-form{padding-bottom:56px}
+.j-consult-title{font-size:36px; line-height:1; text-align:center; margin:40px 0 17px}
+.j-consult-field{width:280px; margin:0 auto 20px; font-size:14px; text-indent:7px; line-height:28px}
+.j-consult-bottomtext{text-align:center}
+
+.j-advantages{background:#f7f5f2; padding-top:10px}
+.j-advantages-title{color:#00999b; font-size:36px; text-align:center; margin-bottom:35px}
+.j-advantage{overflow:hidden; display:inline-block; width:375px; padding-right:20px; margin-bottom:30px; vertical-align:top}
+.j-advantage-image{width:64px; height:64px; float:left}
+.j-advantage-image.a1{background-position:0 -377px}
+.j-advantage-image.a2{background-position:-64px -377px}
+.j-advantage-image.a3{background-position:-128px -377px}
+.j-advantage-image.a4{background-position:-192px -377px}
+.j-advantage-image.a5{background-position:-256px -377px}
+.j-advantage-image.a6{background-position:-320px -377px}
+.j-advantage-text{margin-left:95px}
+
+.j-prices{background:url(images/prices.jpg) repeat 0 0}
+.j-prices-top{height:31px; position:relative; overflow:hidden; margin-bottom:-24px}
+.j-prices-bottom{height:37px; position:relative; overflow:hidden; margin-top:-30px}
+.j-prices-top:before, .j-prices-bottom:before{content:''; position:absolute; top:0; left:0; width:50%; height:100%; margin-left:-122.5px; background:#f7f5f2}
+.j-prices-top:after, .j-prices-bottom:after{content:''; position:absolute; top:0; right:0; width:50%; height:100%; margin-right:-122.5px; background:#f7f5f2}
+.j-prices-bottom:before, .j-prices-bottom:after{background:#fff; border-top:1px solid #ececec}
+.j-prices-top-center{width:245px; height:31px; margin:0 auto; background-position:-245px -309px}
+.j-prices-bottom-center{width:245px; height:37px; margin:0 auto; background-position:-245px -340px}
+.j-prices-button-wrap{position:relative; z-index:10}
+.j-prices-button{position:relative; display:block; width:229px; margin:0 auto; text-align:center; border-radius:54px; color:#cc1e42; text-decoration:none; font-size:24px; text-shadow:0 1px 0 #fff; box-shadow:inset 0 1px 0 #fff; line-height:54px; height:52px; border:1px solid #cfc8bc; background:#f4f3ef; background:-moz-linear-gradient(top,  #f4f3ef 0%, #e5e1d8 100%); background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4f3ef), color-stop(100%,#e5e1d8)); background:-webkit-linear-gradient(top,  #f4f3ef 0%,#e5e1d8 100%); background:-o-linear-gradient(top,  #f4f3ef 0%,#e5e1d8 100%); background:-ms-linear-gradient(top,  #f4f3ef 0%,#e5e1d8 100%); background:linear-gradient(to bottom,  #f4f3ef 0%,#e5e1d8 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f3ef', endColorstr='#e5e1d8',GradientType=0 )}
+.j-prices-button.open{background:#e5e1d9; background:-moz-linear-gradient(top,  #e5e1d9 0%, #f5f3f0 100%); background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e1d9), color-stop(100%,#f5f3f0)); background:-webkit-linear-gradient(top,  #e5e1d9 0%,#f5f3f0 100%); background:-o-linear-gradient(top,  #e5e1d9 0%,#f5f3f0 100%); background:-ms-linear-gradient(top,  #e5e1d9 0%,#f5f3f0 100%); background:linear-gradient(to bottom,  #e5e1d9 0%,#f5f3f0 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e1d9', endColorstr='#f5f3f0',GradientType=0 )}
+
+.j-prices-form{padding:30px 0 75px}
+.j-prices-lis{}
+.j-prices-li{display:inline-block; vertical-align:top; list-style-type:none; margin-left:21px}
+.j-prices-li:first-child{margin-left:0}
+.j-prices-li a{color:#fff; text-decoration:none; background:#00999b; border:1px solid #00999b; display:block; padding:0 16px; height:45px; line-height:47px; border-radius:3px}
+.j-prices-li.active a, .j-prices-li a:hover{color:#00999b; background:#e8f1f1; }

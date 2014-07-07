@@ -10,11 +10,14 @@
 <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300&subset=latin,cyrillic" rel="stylesheet" type="text/css" />
 <link type="text/css" rel="stylesheet" href="css/style.css" />
 <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="css/bootstrapValidator.css"/>
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <script type="text/javascript" src="js/jquery.1.8.3.min.js" charset="utf-8"></script>
 <script type="text/javascript" src="js/bootstrap.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/bootstrapValidator.js"></script>
+<script type="text/javascript" src="js/jquery.countdown.js"></script>
 <!-- bxSlider Javascript file -->
 <script src="js/jquery.bxslider.js"></script>
 <!-- bxSlider CSS file -->
@@ -44,7 +47,7 @@
 				<big>200</big><br/>Человек уже воспользовались данным предложением!
 			</div>
 			<div class="j-action col-md-4">
-				<big>19:20:05</big><br/>Осталось до  завершения акции 
+				<big class="clock"></big><br/>Осталось до  завершения акции 
 			</div>
 			<div class="j-action col-md-4 ">
 				<big>10</big><br/>Мест осталось на эту акцию!
@@ -73,19 +76,24 @@
 		<div class="j-wrapper container">
 			<div class="j-consult-button-wrap j-form-button-wrap"><a class="j-form-button j-consult-button" href="#">Записаться</a></div>
 			<div class="j-consult-form j-form">
-				<form action="">
+			
+				<form id="form-consult" method="post" >
 					<fieldset>
 						<div class="j-consult-title">Записаться на бесплатную <br/>консультацию или процедуру</div>
 						<div class="j-consult-field">
-							Имя
-							<input type="text" value="" />
+							<div class="form-group">
+							<label>Имя</label>
+							<input type="text" name="username" id="username" class="form-control"  />
+							</div>
 						</div>
 						<div class="j-consult-field">
-							Номер телефона
-							<input type="text" id="phone" value="" />
+							<div class="form-group">
+							<label>Номер телефона</label>
+							<input type="text" id="phone" name="phone" class="form-control" placeholder="7894555500" />
+							</div>
 						</div>
 						<div class="j-consult-field">
-							Адрес салона
+							<label>Адрес салона</label>
 							<select>
 								<option>-</option>
 								<option value="1">Адрес 1</option>

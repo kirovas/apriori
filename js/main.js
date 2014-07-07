@@ -41,4 +41,49 @@ $(document).ready(function(){
 	nextSelector:('#carousel-next'),
 	prevSelector:('#carousel-prev')
   });
+  $('.clock').countdown('2020/10/10', function(event) {
+  $(this).html(event.strftime('%H:%M:%S'));
+  });
+});
+
+////////////////////////////////////////
+$(document).ready(function() {
+    $('#form-consult').bootstrapValidator({
+        message: 'This value is not valid',
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            username: {
+                message: 'Имя введено не верно!',
+                validators: {
+                    notEmpty: {
+                        message: 'Поле имя не может быть пустым!'
+                    },
+                    stringLength: {
+                        min: 6,
+                        max: 30,
+                        message: 'Имя должно содержать больше 6 символов'
+                    },
+                    regexp: {
+                        regexp: /^[а-яА-ЯёЁa-zA-Z0-9]+$/,
+                        message: 'The username can only consist of alphabetical, number and underscore'
+                    }
+                }
+            },
+            phone: {
+                validators: {
+                    notEmpty: {
+                        message: 'Поле бязательное к заполнению'
+                    },
+                    regexp: {
+                        regexp: /^[\s\d]+$/,
+                        message: 'Должны быть только цифры'
+                    }
+                }
+            }
+        }
+    });
 });

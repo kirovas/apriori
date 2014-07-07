@@ -1823,7 +1823,7 @@ select[multiple].input-lg {
 }
 .has-feedback .form-control-feedback {
   position: absolute;
-  top: 25px;
+  top: 40px;
   right: 0;
   display: block;
   width: 34px;
@@ -1890,6 +1890,7 @@ select[multiple].input-lg {
 .has-error .radio-inline,
 .has-error .checkbox-inline {
   color: #a94442;
+  text-shadow: 1px 1px 0px rgba(255,255,255,0.4);
 }
 .has-error .form-control {
   border-color: #a94442;

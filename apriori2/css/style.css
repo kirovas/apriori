@@ -126,10 +126,16 @@ transition: all 0.5s ease-in-out;
 .dropdown-menu{
 	background:#edf1ee!important;
 }
+.shadow-m {
+overflow: hidden;
+box-shadow: inset 0px -2px 2px rgba(0,0,0,0.1);
+margin-left: -15px;
+margin-right: -15px;
+}
 .megamenu{
 	background:#edf1ee;
 }
-.megamenu li.up p{
+.megamenu  p{
 	color:#00999b;
 	font-size:14px;
 	margin:0px;
@@ -142,10 +148,10 @@ transition: all 0.5s ease-in-out;
 	padding:10px 0px;
 	text-align:center;
 }
-.megamenu li.up .mega-col a{
+.megamenu .mega-col a{
 	font-size:14px;
 }
-.megamenu li.up .mega-col{
+.megamenu .mega-col{
 	margin-top:15px;
 }
  .icon-bar {

@@ -39,6 +39,17 @@ $(window).bind('scroll', function() {
              $('.a-top').removeClass('fixed');
          }
     });
+$(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > 150) {
+		$('.hide-bottom').hide();
+        $('.hide-on-top').fadeIn();
+		
+    } else {
+        $('.hide-on-top').fadeOut();
+		$('.hide-bottom').show();
+    }
+});
 $(document).ready(function(){
   $('.bxslider').bxSlider({
 	pager:true,
@@ -72,5 +83,61 @@ $(document).ready(function(){
 	pagerType:'short',
 	nextSelector:('#talk-slider-next'),
 	prevSelector:('#talk-slider-prev')
+  });
+});
+
+////////////////////////
+$(document).ready(function() {
+    $('.form-free-c').bootstrapValidator({
+        message: 'This value is not valid',
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            username: {
+                message: 'Имя введено не верно!',
+                validators: {
+                    notEmpty: {
+                        message: 'Поле имя не может быть пустым!'
+                    },
+                    stringLength: {
+                        min: 6,
+                        max: 30,
+                        message: 'Имя должно содержать больше 6 символов'
+                    },
+                    regexp: {
+                        regexp: /^[а-яА-ЯёЁa-zA-Z0-9]+$/,
+                        message: 'The username can only consist of alphabetical, number and underscore'
+                    }
+                }
+            },
+            phone: {
+                validators: {
+                    notEmpty: {
+                        message: 'Поле бязательное к заполнению'
+                    },
+                    regexp: {
+                        regexp: /^[\s\d]+$/,
+                        message: 'Должны быть только цифры'
+                    }
+                }
+            }
+        }
+    });
+});
+$(function() {
+  $('a.button-yellow[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
   });
 });

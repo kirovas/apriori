@@ -110,6 +110,7 @@ margin-right: -15px;
 background: #faf7f2;
 padding: 0px 15px;
 height:90px;
+box-shadow: 2px 0px 2px rgba(0,0,0,0.4);
  }
 .hide-on-top .navbar-nav{
 	background:#faf7f2;
@@ -553,7 +554,7 @@ background-size: cover;
 .advantage-image.a4{background-position:-192px -377px}
 .advantage-image.a5{background-position:-256px -377px}
 .advantage-image.a6{background-position:-320px -377px}
-.advantage-text{margin-left:95px}
+.advantage-text{margin-left:95px;font-size:16px;}
 .our-p-title{
 	color:#706f6f;
 	text-align:center;
@@ -828,7 +829,7 @@ margin: 0 auto;
 }
 .talk-head p strong{
 	color:#000;
-	font-size:16;
+	font-size:18px;
 }
 .t-s-wrap{
 	padding-top:30px;
@@ -1017,6 +1018,10 @@ padding-left: 15px;
 .review-extra span.nik{
 	font-weight:bold;
 	color:#000;
+	font-size:16px;
+}
+.carousel-review-description p{
+	font-size:16px;
 }
 .info-rev{
 	display:inline-block;
@@ -1060,6 +1065,8 @@ margin-top:30px;
 }
 .panel-default{
 	border-color:transparent!important;
+	box-shadow:none!important;
+	-webkit-box-shadow:none!important;
 }
 .panel-group .panel-heading+.panel-collapse .panel-body{
 	border-left:1px solid #00999b;

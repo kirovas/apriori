@@ -262,6 +262,10 @@ section{position: relative;}
 }
 .slider-main .breadcrumb ul li a{
 	color:#fff;
+	text-decoration:underline;
+}
+.slider-main .breadcrumb ul li a:hover{
+	text-decoration:none;
 }
 .slider-main h2{
 	color:#fff;
@@ -371,7 +375,7 @@ transition: all 0.5s ease-in-out;
 }
 .pro-item-title{
 	color:#00999b;
-	font-size:20px;
+	font-size:20px!important;
 	margin:25px 0px 15px;
 }
 .pro-item{
@@ -563,6 +567,9 @@ background-size: cover;
 	margin-top:30px;
 	margin-bottom:20px;
 }
+.our-p {
+padding-bottom: 30px;
+}
 .our-p p{
 	font-size:16px;
 }
@@ -650,6 +657,9 @@ margin: 0 auto;
 	min-height:510px;
 	margin-top: 15px;
 	padding: 20px 55px;
+}
+.form-slider{
+	
 }
 /*carousel*/
 /* carousel */
@@ -1071,6 +1081,7 @@ margin-top:30px;
 .panel-group .panel-heading+.panel-collapse .panel-body{
 	border-left:1px solid #00999b;
 	padding-left:15px;
+	font-size: 16px;
 }
 .panel-body{
 	margin-left: 15px;
@@ -1084,7 +1095,7 @@ margin-top:30px;
 .adres{
 	font-size:14px;
 	color:#666666;
-	
+	margin-top: 30px;
 }
 .adres p{
 	line-height:20px;
@@ -1204,8 +1215,8 @@ border-radius: 3px;
 	text-decoration:none;
 }
 .s-f{
-	width:180px;
-	padding: 3px 0px 3px 20px!important;
+	width:188px;
+	
 	background-image:url(../images/envelope.png);
 	background-repeat:no-repeat;
 	background-position:left center;
@@ -1318,6 +1329,60 @@ and (max-width : 480px) {
   .bx-controls.bx-has-pager{
 	left: 43%;
  }
+ .slider-main .slide-caption{
+	padding: 0px;
+width: 100%;
+ }
+ .button-yellow{
+	line-height: 20px;
+	padding: 10px 5px;
+ }
+ .procedure-title, .photo-after-title, .statement h3, .res h3, .problem-title, .advantages-title, .talk-title, .review-title, .faq-title{
+	font-size: 20px;
+text-align: left;
+color:#706f6f;
+ }
+ .price-inner{
+	padding:0px;
+	margin: 30px 0%;
+ }
+ .price-inner .table-striped tr td{
+	padding: 0px 5px;
+line-height: 20px;
+font-size: 14px;
+ }
+ .a-action-main{
+	margin: 30px 0px;
+ }
+ .a-action-main .gift{
+	background:none;
+	padding-left: 0px;
+	text-align:center;
+	font-size: 30px;
+ }
+ .a-action-main p{
+	line-height:30px;
+font-size: 18px;
+padding: 0px 0px 0px 0px;
+text-align:left;
+font-weight:400;
+ }
+ .form-right{
+	padding: 20px 0px;
+ }
+ .form-slider{
+ margin:0px;
+ padding:0px 5px;
+ }
+ .talk-wrap{
+	width:100%;
+ }
+ .panel-title > a{
+	font-size: 16px;
+ }
+ .hide-on-top{
+	height:auto;
+ }
 }
  
 /* iPads (portrait) ----------- */
@@ -1343,25 +1408,51 @@ and (max-width : 1024px) {
  .form-right{
 	background:none;
  }
+ #bs1 .navbar-nav .right-call{
+	display:none;
+ }
+#bs1 .navbar-nav .right-call .header-phone{
+	display:none;
+}
 }
  
 /* Larger screens ----------- */
 @media only screen 
 and (min-width : 1024px) {
     /* Styles */
- 
+ #bs1 .navbar-nav .right-call .header-phone{
+	display:block;
+}
 }
 @media (min-width: 768px) {
  .container-fluid>.navbar-header{
 	margin-right: -15px;
 margin-left: -15px;
  }
+ #bs1 .navbar-nav li a{
+	padding-left:5px;
+ }
+  #bs1 .navbar-nav .right-call{
+	margin-top: 18px;
+  }
 }
 @media (min-width: 992px) {
   
   .col-5{float:left;width:20%;}
+  #bs1 .navbar-nav .right-call {
+margin-top: 0px;
+}
+#bs1 .navbar-nav .right-call .header-phone{
+	display:none;
+}
+
 }
 @media (min-width: 1200px) {
- 
+ #bs1 .navbar-nav .right-call {
+margin-top: 0px;
+}
+#bs1 .navbar-nav .right-call .header-phone{
+	display:block;
+}
   .col-5{float:left;width:20%;}
 }

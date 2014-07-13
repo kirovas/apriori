@@ -102,11 +102,7 @@ $(document).ready(function() {
                     notEmpty: {
                         message: 'Поле имя не может быть пустым!'
                     },
-                    stringLength: {
-                        min: 6,
-                        max: 30,
-                        message: 'Имя должно содержать больше 6 символов'
-                    },
+                    
                     regexp: {
                         regexp: /^[а-яА-ЯёЁa-zA-Z0-9]+$/,
                         message: 'The username can only consist of alphabetical, number and underscore'
@@ -128,7 +124,7 @@ $(document).ready(function() {
     });
 });
 $(function() {
-  $('a.button-yellow[href*=#]:not([href=#])').click(function() {
+  $('a.scroll[href*=#]:not([href=#]), a#sign[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');

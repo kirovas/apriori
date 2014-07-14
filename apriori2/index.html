@@ -84,13 +84,13 @@
 		<li><a href="#photo-after" class="scroll"><span>Результаты</span></a></li>
 		<li><a href="#review" class="scroll"><span>Отзывы</span></a></li>
         <li ><a href="#price" class="scroll"><span>Цены </span></a></li>
-		 <li ><a href="#" class="free-c scroll"><span>Бесплатная консультация</span></a></li>
+		 <li ><a href="#sign-form-consult" class="free-c scroll"><span>Бесплатная консультация</span></a></li>
 		
 		
       </ul > 
 	  <ul class="nav navbar-nav navbar-right">
 		<li class="right-call"><div class="header-phone">+7 (812) <big>648-23-06</big></div>
-		<a href="#" class="callback"><span>Вам перезвонить?</span></a></li>
+		<a href="#" class="callback" data-toggle="modal" data-target="#myModal"><span>Вам перезвонить?</span></a></li>
 	  </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -554,7 +554,7 @@
   <li><div class="carousel-review">
 	<div class="carousel-review-head">
 		<div class="row">
-			<div class="foto">
+			<div class="col-md-2">
 				<img src="images/lera.jpg" alt="" class="img-circle" />
 			</div>
 			<div class="col-md-10">
@@ -577,7 +577,7 @@
   <div class="carousel-review">
 	<div class="carousel-review-head">
 		<div class="row">
-			<div class="foto">
+			<div class="col-md-2">
 				<img src="images/viktoria.jpg" alt="" class="img-circle" />
 			</div>
 			<div class="col-md-10">
@@ -599,7 +599,7 @@
   <div class="carousel-review">
 	<div class="carousel-review-head">
 		<div class="row">
-			<div class="foto">
+			<div class="col-md-2">
 				<img src="images/lera.jpg" alt="" class="img-circle"/>
 			</div>
 			<div class="col-md-10">
@@ -624,7 +624,7 @@
 	<div class="carousel-review">
 	<div class="carousel-review-head">
 		<div class="row">
-			<div class="foto">
+			<div class="col-md-2">
 				<img src="images/lera.jpg" alt="" class="img-circle" />
 			</div>
 			<div class="col-md-10">
@@ -647,7 +647,7 @@
   <div class="carousel-review">
 	<div class="carousel-review-head">
 		<div class="row">
-			<div class="foto">
+			<div class="col-md-2">
 				<img src="images/lera.jpg" alt="" class="img-circle" />
 			</div>
 			<div class="col-md-10">
@@ -906,8 +906,8 @@
 					<a href="#"><img src="images/vk-widget.jpg" alt="" /></a>
 				</div>
 				<div class="column col-sm-4">
-				<a href="#" class="button-foo">Записаться</a><a href="#" class="button-white s-f">Письмо руководителю</a>
-						<a href="#" class="button-white">Уведомлять о хороших акциях и скидках!</a>
+				<a href="#sign-form-consult" class="button-foo scroll">Записаться</a><a href="#" class="button-white s-f" data-toggle="modal" data-target="#modal-form-2">Письмо руководителю</a>
+						<a href="#" class="button-white" data-toggle="modal" data-target="#myModal3">Уведомлять о хороших акциях и скидках!</a>
 					<span class="foo-tel"><span>+7 (812)</span>648-23-06</span>
 				</div>
 				<div class="column col-sm-2">
@@ -932,5 +932,117 @@
 			</div>
 	</div>
 </section>
+<!-- Modal form -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title cb-title">Вам перезвонить?</h4>
+      </div>
+      <div class="modal-body">
+        <form id="modal-form" role="form" >
+			
+  <div class="form-group">
+    <label for="fio">Имя и фамилия</label>
+    <input type="text" class="form-control" id="fio" name="fio" placeholder="Имя и фамилия">
+  </div>
+  <div class="form-group">
+    <label for="phone2">Номер телефона</label>
+    <input type="text" class="form-control" id="phone2" name="phone2" placeholder="+7(___)___-__-__">
+  </div>
+		<div class="modal-button"><button type="submit" class="mod-button">Отправить</button></div>
+		</form>
+      </div>
+      
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- modal-form-2 -->
+<!-- Modal -->
+<div class="modal fade" id="modal-form-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Написать письмо руководителю</h4>
+      </div>
+      <div class="modal-body">
+        <form id="modal-mail" role="form">
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="form-group">
+    <label for="fio2">Имя и фамилия</label>
+    <input type="text" class="form-control" id="fio2" name="fio2" placeholder="Имя и фамилия">
+  </div>
+			</div>
+			<div class="col-sm-4">
+				<div class="form-group">
+    <label for="phone3">Номер телефона</label>
+    <input type="tel" class="form-control" id="phone3" name="phone3" placeholder="+7 (911) 123 45 67">
+  </div>
+			</div>
+			<div class="col-sm-4">
+				<div class="form-group">
+    <label for="email2">Электронная  почта</label>
+    <input type="email" class="form-control" id="email2" name="email2" placeholder="mail@mail.com">
+  </div>
+			</div>
+		</div>
+		<div class="row">
+		<div class="form-group col-sm-9">
+		<label for="topic">Тема обращения</label>
+			<select class="form-control" id="topic">
+				<option>Благодарность за предоставление услуг</option>
+				<option>Благодарность за предоставление услуг</option>
+				<option>Благодарность за предоставление услуг</option>
+			</select>
+		</div>
+		</div>
+		<div class="row">
+			<div class="form-group col-md-12">
+				<label for="message">Тема обращения</label>
+				<textarea class="form-control" rows="3" name="message" id="message"></textarea>
+			</div>
+		</div>
+		</form>
+      </div>
+      <div class="modal-footer">
+        <div class="form-group">
+    <button type="file" class="add-btn">Добавить файл</button>
+    <p class="help-file">Разрешенные форматы: zip, pdf, doc, png, gif,6 jpg, docx, txt</p>
+  </div>
+        
+      </div>
+	  <div class="modal-button"><button type="submit" class="mod-button">Отправить</button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal form -->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title cb-title">Подписаться на рассылку акций и скидок?</h4>
+      </div>
+      <div class="modal-body">
+        <form id="modal-form-sub" role="form" >
+			
+  <div class="form-group">
+    <label for="fio4">Имя и фамилия</label>
+    <input type="text" class="form-control" id="fio4" name="fio4" placeholder="Имя и фамилия">
+  </div>
+  <div class="form-group">
+    <label for="email4">Номер телефона</label>
+    <input type="text" class="form-control" id="email4" name="email4" placeholder="mail@mail.com">
+  </div>
+		<div class="modal-button"><button type="submit" class="mod-button">Отправить</button></div>
+		</form>
+      </div>
+      
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 </body>  
 </html>

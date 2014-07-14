@@ -945,7 +945,7 @@ margin-bottom: 35px;
 margin-top:30px;
 }
 .bx-wrapper{
-	width:80%;
+	width:100%;
 }
 .carousel-nav {
 position: relative;
@@ -1008,7 +1008,7 @@ width: 50px;
 left: 47%;
 }
 .carousel-review{
-	padding:20px 0px 30px 0px;
+	padding:20px 15px 30px 15px;
 	margin-bottom:20px;
 	border-bottom:1px solid #f1f1f1;
 }
@@ -1231,7 +1231,92 @@ border-radius: 3px;
 }
 
 /* ------------------------- Popups */
- 
+/*  MODAL-FORM   */ 
+#myModal .modal-dialog,#myModal3 .modal-dialog{
+	width:470px!important;
+}
+.modal-header{
+	border-bottom: 0px!important;
+}
+.modal-title.cb-title{
+	text-align:center;
+	font-size:30px;
+	color:#00999b;
+	font-weight:300;
+	margin-top:35px;
+	margin-bottom: 10px;
+}
+.mod-button{
+	display: inline-block;
+font-size: 16px;
+height: 32px;
+color: #fff!important;
+background: #00999b;
+padding: 3px 37px!important;
+margin: 0px 12px 20px;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+border: 1px solid #00999b;
+border-radius: 3px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+}
+.mod-button:hover{
+	background: transparent;
+color: #00999b!important;
+}
+.modal-button{
+	text-align:center;
+}
+#modal-form input, #myModal3 input{
+	height:50px;
+	line-height:50px;
+}
+#modal-form label, #myModal3 label{
+	font-size:16px;
+	font-weight:300;
+}
+
+/* modal*/
+#modal-form-2 input{
+	height:46px;
+	line-height:46px;
+}
+#modal-form-2 label{
+	font-size:16px;
+	font-weight:300;
+}
+#modal-form-2 select{
+	height:46px;
+}
+#modal-form-2 .form-group{
+	margin-bottom:30px!important;
+}
+#modal-form-2  .modal-footer{
+	text-align:left!important;
+}
+.add-btn{
+	display:inline-block;
+	font-size:12px;
+	color:#00999b;
+	line-height:23px;
+	border:1px solid #00999b;
+	background:#fff;
+}
+.help-file{
+	display:inline-block;
+	margin-left:15px;
+	color:#625e58;
+	font-size:12px;
+	line-height:23px;
+}
+#modal-form-2 .modal-title{
+	font-size:30px;
+	text-align:center;
+	color:#00999b;
+}
 /* ------------------------- Media Queries */
  
 /* ---------------------------------------------------------------------------- */
@@ -1269,6 +1354,9 @@ and (max-width : 320px) {
  .form-right .carousel-nav{
 	top: 83px;
  }
+ .form-right-title{
+	text-align:center;
+ }
  .for-salon-select{
 	margin-top: 70px;
  }
@@ -1291,6 +1379,21 @@ and (max-width : 320px) {
  .bx-controls.bx-has-pager{
 	left: 43%;
  }
+ .procedure-title, .photo-after-title, .statement h3, .res h3, .problem-title, .advantages-title, .talk-title, .review-title, .faq-title, .our-p-title{
+	font-size: 20px;
+text-align: left;
+color:#706f6f;
+ }
+ .slider-main h2{
+	font-size:30px;
+ }
+ .navbar-nav .button{
+	display:inline-block;
+	margin-left: 75px;
+ }
+ .navbar-nav .header-phone{
+	text-align:center;
+ }
 }
  
 /* Smartphones (landscape) ----------- */
@@ -1307,6 +1410,12 @@ and (max-width : 480px) {
  .form-right .carousel-nav{
 	top: 83px;
  }
+ .form-right-title{
+	text-align:center;
+ }
+ .spec-header, .spec-text{
+	margin:0px 10px;
+ }
  .for-salon-select{
 	margin-top: 70px;
  }
@@ -1315,7 +1424,10 @@ and (max-width : 480px) {
 	top: -147px;
  }
   .form-right #form-slider-prev{
-	right: 80%;
+	right: 65%;
+ }
+ .form-right #form-slider-next{
+	right: 23%;
  }
   .talk-wrap .bx-controls.bx-has-pager{
 	left: 38%;
@@ -1337,7 +1449,7 @@ width: 100%;
 	line-height: 20px;
 	padding: 10px 5px;
  }
- .procedure-title, .photo-after-title, .statement h3, .res h3, .problem-title, .advantages-title, .talk-title, .review-title, .faq-title{
+ .procedure-title, .photo-after-title, .statement h3, .res h3, .problem-title, .advantages-title, .talk-title, .review-title, .faq-title, .our-p-title{
 	font-size: 20px;
 text-align: left;
 color:#706f6f;
@@ -1383,6 +1495,19 @@ font-weight:400;
  .hide-on-top{
 	height:auto;
  }
+ .slider-main h2{
+	font-size:30px;
+ }
+ .navbar-nav .button{
+	display:inline-block;
+	margin-left: 75px;
+ }
+ .navbar-nav .header-phone{
+	text-align:center;
+ }
+ .form-left-title{
+	font-size:26px;
+ }
 }
  
 /* iPads (portrait) ----------- */
@@ -1390,7 +1515,9 @@ font-weight:400;
 and (min-width : 481px)
 and (max-width : 768px) {
     /* Styles */
- 
+ .header-phone {
+display: none;
+}
 }
  
 /* iPads (landscape) ----------- */
@@ -1415,7 +1542,13 @@ and (max-width : 1024px) {
 	display:none;
 }
 }
- 
+ @media only screen 
+and (min-width : 1024px) 
+and (max-width : 1194px){
+	.header-phone {
+display: none;
+}
+ }
 /* Larger screens ----------- */
 @media only screen 
 and (min-width : 1024px) {

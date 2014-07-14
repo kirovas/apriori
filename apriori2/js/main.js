@@ -32,7 +32,7 @@ $('.more-photo a').bind('click', function(){
 })
 });
 $(window).bind('scroll', function() {
-         if ($(window).scrollTop() > 150) {
+         if ($(window).scrollTop() > 150 && $(window).width() > 960) {
              $('.a-top').addClass('fixed').animate({top: 0}, 600);
          }
          else {
@@ -41,7 +41,7 @@ $(window).bind('scroll', function() {
     });
 $(document).scroll(function () {
     var y = $(this).scrollTop();
-    if (y > 150) {
+    if (y > 150 && $(window).width() > 960) {
 		$('.hide-bottom').hide();
         $('.hide-on-top').fadeIn();
 		
@@ -49,6 +49,7 @@ $(document).scroll(function () {
         $('.hide-on-top').fadeOut();
 		$('.hide-bottom').show();
     }
+	
 });
 $(document).ready(function(){
   $('.bxslider').bxSlider({
@@ -117,6 +118,121 @@ $(document).ready(function() {
                     regexp: {
                         regexp: /^[\s\d]+$/,
                         message: 'Должны быть только цифры'
+                    }
+                }
+            }
+        }
+    });
+	/////modal-form validate
+	$('#modal-form').bootstrapValidator({
+        message: 'This value is not valid',
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            fio: {
+                message: 'Имя введено не верно!',
+                validators: {
+                    notEmpty: {
+                        message: 'Поле имя не может быть пустым!'
+                    },
+                    
+                    regexp: {
+                        regexp: /^[а-яА-ЯёЁa-zA-Z0-9]+$/,
+                        message: 'The username can only consist of alphabetical, number and underscore'
+                    }
+                }
+            },
+            phone2: {
+                validators: {
+                    notEmpty: {
+                        message: 'Поле бязательное к заполнению'
+                    },
+                    regexp: {
+                        regexp: /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/,
+                        message: 'Должны быть только цифры'
+                    }
+                }
+            }
+        }
+    });
+	/////modal-form validate
+	$('#modal-form-2').bootstrapValidator({
+        message: 'This value is not valid',
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            fio2: {
+                message: 'Имя введено не верно!',
+                validators: {
+                    notEmpty: {
+                        message: 'Поле имя не может быть пустым!'
+                    },
+                    
+                    regexp: {
+                        regexp: /^[а-яА-ЯёЁa-zA-Z0-9]+$/,
+                        message: 'The username can only consist of alphabetical, number and underscore'
+                    }
+                }
+            },
+            phone3: {
+                validators: {
+                    notEmpty: {
+                        message: 'Поле бязательное к заполнению'
+                    },
+                    regexp: {
+                        regexp: /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/,
+                        message: 'Должны быть только цифры'
+                    }
+                }
+            },
+			email2: {
+                validators: {
+                    notEmpty: {
+                        message: 'Поле бязательное к заполнению'
+                    },
+                    emailAddress: {
+                        message: 'Проверьте правильность ввода!'
+                    }
+                }
+            }
+        }
+    });
+	/////modal-form validate
+	$('#myModal3').bootstrapValidator({
+        message: 'This value is not valid',
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            fio4: {
+                message: 'Имя введено не верно!',
+                validators: {
+                    notEmpty: {
+                        message: 'Поле имя не может быть пустым!'
+                    },
+                    
+                    regexp: {
+                        regexp: /^[а-яА-ЯёЁa-zA-Z0-9]+$/,
+                        message: 'The username can only consist of alphabetical, number and underscore'
+                    }
+                }
+            },
+            
+			email4: {
+                validators: {
+                    notEmpty: {
+                        message: 'Поле бязательное к заполнению'
+                    },
+                    emailAddress: {
+                        message: 'Проверьте правильность ввода!'
                     }
                 }
             }

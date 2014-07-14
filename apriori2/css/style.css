@@ -1509,14 +1509,21 @@ font-weight:400;
 	font-size:26px;
  }
  .button-foo, .s-f{
-	text-align:center;
-	width:100%;
+	text-align: center;
+width: 80%;
+display: block;
+margin-left: auto;
+margin-right: auto;
  }
  .s-f{
- line-height: 36px;
+ line-height: 32px;
  }
  .button-white{
 	height:auto;
+	width: 80%;
+display: block;
+margin-left: auto;
+margin-right: auto;
  }
  .footer .column .foo-tel{
 	text-align:center;

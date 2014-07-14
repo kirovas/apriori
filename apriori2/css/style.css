@@ -1508,6 +1508,27 @@ font-weight:400;
  .form-left-title{
 	font-size:26px;
  }
+ .button-foo, .s-f{
+	text-align:center;
+	width:100%;
+ }
+ .s-f{
+ line-height: 36px;
+ }
+ .button-white{
+	height:auto;
+ }
+ .footer .column .foo-tel{
+	text-align:center;
+	width: 100%;
+ }
+ .social-wrap{
+	text-align:center;
+	width: 100%;
+ }
+ .footer .column{
+	display:block;
+ }
 }
  
 /* iPads (portrait) ----------- */

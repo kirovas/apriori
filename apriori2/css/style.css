@@ -1451,12 +1451,13 @@ width: 100%;
 	line-height: 20px;
 	padding: 10px 5px;
  }
- .procedure-title, .photo-after-title, .statement h3, .res h3, .problem-title, .advantages-title, .talk-title, .review-title, .faq-title, .our-p-title{
+ .procedure-title, .photo-after-title, .statement h3, .res h3, .problem-title, .advantages-title, .talk-title, .review-title, .faq-title, .our-p-title {
 	font-size: 20px;
 text-align: left;
 color:#706f6f;
 padding-left: 15px;
  }
+ .danger-title{font-size: 20px;}
  .price-inner{
 	padding:0px;
 	margin: 30px 0%;

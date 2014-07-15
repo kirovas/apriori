@@ -249,6 +249,7 @@ section{position: relative;}
 	background-color:transparent;
 	padding: 8px 0px;
 	margin-left: -15px;
+	overflow: hidden;
 }
 .slider-main .breadcrumb ul{
 	list-style:none;
@@ -1008,9 +1009,10 @@ width: 50px;
 left: 47%;
 }
 .carousel-review{
-	padding:20px 15px 30px 15px;
+	padding:20px 15px 30px 0px;
 	margin-bottom:20px;
 	border-bottom:1px solid #f1f1f1;
+	
 }
 .carousel-review-head{
 	margin-bottom:25px;
@@ -1453,6 +1455,7 @@ width: 100%;
 	font-size: 20px;
 text-align: left;
 color:#706f6f;
+padding-left: 15px;
  }
  .price-inner{
 	padding:0px;
@@ -1500,7 +1503,7 @@ font-weight:400;
  }
  .navbar-nav .button{
 	display:inline-block;
-	margin-left: 75px;
+	
  }
  .navbar-nav .header-phone{
 	text-align:center;
@@ -1536,6 +1539,9 @@ margin-right: auto;
  .footer .column{
 	display:block;
  }
+ .nav>li{
+	text-align:center;
+ }
 }
  
 /* iPads (portrait) ----------- */
@@ -1546,6 +1552,16 @@ and (max-width : 768px) {
  .header-phone {
 display: none;
 }
+.navbar-nav .button{
+	display:inline-block;
+	
+ }
+ .navbar-nav .header-phone{
+	text-align:center;
+ }
+ .nav>li{
+	text-align:center;
+ }
 }
  
 /* iPads (landscape) ----------- */
@@ -1569,6 +1585,10 @@ and (max-width : 1024px) {
 #bs1 .navbar-nav .right-call .header-phone{
 	display:none;
 }
+.navbar-nav .button{
+	display:none;
+	
+ }
 }
  @media only screen 
 and (min-width : 1024px) 

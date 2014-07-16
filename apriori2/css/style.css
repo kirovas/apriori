@@ -960,7 +960,7 @@ height:40px;
 #carousel-next {
 position: absolute;
 top: 0px;
-left: 54%;
+left: 55%;
 
 }
 #carousel-prev {
@@ -1006,7 +1006,7 @@ a.bx-prev:hover, a.bx-next:hover{
 position: absolute;
 top: -40px;
 width: 50px;
-left: 47%;
+left: 48%;
 }
 .carousel-review{
 	padding:20px 15px 30px 0px;
@@ -1422,14 +1422,14 @@ and (max-width : 480px) {
 	margin-top: 70px;
  }
   .form-right .bx-controls.bx-has-pager{
-	left: 40%;
+	left: 43%;
 	top: -147px;
  }
   .form-right #form-slider-prev{
-	right: 65%;
+	right: 61%;
  }
  .form-right #form-slider-next{
-	right: 23%;
+	right: 30%;
  }
   .talk-wrap .bx-controls.bx-has-pager{
 	left: 38%;
@@ -1439,6 +1439,9 @@ and (max-width : 480px) {
  }
  #carousel-next{
 	left: 64%;
+ }
+ #talk-slider-next{
+	right: 38px;
  }
   .bx-controls.bx-has-pager{
 	left: 43%;
@@ -1466,6 +1469,7 @@ padding-left: 15px;
 	padding: 0px 5px;
 line-height: 20px;
 font-size: 14px;
+width: 78%;
  }
  .a-action-main{
 	margin: 30px 0px;
@@ -1563,6 +1567,16 @@ display: none;
  .nav>li{
 	text-align:center;
  }
+ .form-right{
+	width:100%;
+	background:none;
+ }
+ .form-right .bx-controls.bx-has-pager{
+	left: 83%;
+ }
+ .form-left{
+	width:100%;
+ }
 }
  
 /* iPads (landscape) ----------- */
@@ -1574,10 +1588,17 @@ and (max-width : 1024px) {
  .header-phone{display:none;}
  .a-action-main{margin:30px 5%;}
  .form-right .bx-controls.bx-has-pager{
-	top: -144px;
-	left: 280px;
+	top: -116px;
+left: 85%;
+ }
+ .talk-wrap .bx-controls.bx-has-pager{
+	left: 45%;
+ }
+ .form-left{
+	width:100%;
  }
  .form-right{
+ width:100%;
 	background:none;
  }
  #bs1 .navbar-nav .right-call{

@@ -1422,7 +1422,7 @@ and (max-width : 480px) {
 	margin-top: 70px;
  }
   .form-right .bx-controls.bx-has-pager{
-	left: 43%;
+	left: 39%;
 	top: -147px;
  }
   .form-right #form-slider-prev{
@@ -1543,6 +1543,7 @@ margin-right: auto;
  }
  .footer .column{
 	display:block;
+	margin-bottom: 20px;
  }
  .nav>li{
 	text-align:center;

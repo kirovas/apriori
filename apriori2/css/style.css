@@ -1349,9 +1349,16 @@ color: #00999b!important;
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
+
     /* Styles */
+	.navbar-brand{
+		width:55%;
+	}
  .form-left, .form-right{
 	width:100%;
+ }
+ .form-right{
+	background:none;
  }
  .form-right .carousel-nav{
 	top: 83px;
@@ -1359,17 +1366,23 @@ and (max-width : 320px) {
  .form-right-title{
 	text-align:center;
  }
+ .spec-header, .spec-text{
+	margin:0px 10px;
+ }
  .for-salon-select{
 	margin-top: 70px;
  }
- .form-right .bx-controls.bx-has-pager{
-	left: 40%;
+  .form-right .bx-controls.bx-has-pager{
+	left: 39%;
 	top: -147px;
  }
- .form-right #form-slider-prev{
-	right: 80%;
+  .form-right #form-slider-prev{
+	right: 61%;
  }
- .talk-wrap .bx-controls.bx-has-pager{
+ .form-right #form-slider-next{
+	right: 30%;
+ }
+  .talk-wrap .bx-controls.bx-has-pager{
 	left: 38%;
  }
  #carousel-prev{
@@ -1378,22 +1391,112 @@ and (max-width : 320px) {
  #carousel-next{
 	left: 64%;
  }
- .bx-controls.bx-has-pager{
+ #talk-slider-next{
+	right: 38px;
+ }
+  .bx-controls.bx-has-pager{
 	left: 43%;
  }
- .procedure-title, .photo-after-title, .statement h3, .res h3, .problem-title, .advantages-title, .talk-title, .review-title, .faq-title, .our-p-title{
+ .slider-main .slide-caption{
+	padding: 0px;
+width: 100%;
+ }
+ .button-yellow{
+	line-height: 20px;
+	padding: 10px 5px;
+ }
+ .procedure-title, .photo-after-title, .statement h3, .res h3, .problem-title, .advantages-title, .talk-title, .review-title, .faq-title, .our-p-title {
 	font-size: 20px;
 text-align: left;
 color:#706f6f;
+padding-left: 15px;
+ }
+ .danger-title{font-size: 20px;}
+ .price-inner{
+	padding:0px;
+	margin: 30px 0%;
+ }
+ .price-inner .table-striped tr td{
+	padding: 0px 5px;
+line-height: 20px;
+font-size: 14px;
+width: 78%;
+ }
+ .a-action-main{
+	margin: 30px 0px;
+ }
+ .a-action-main .gift{
+	background:none;
+	padding-left: 0px;
+	text-align:center;
+	font-size: 30px;
+ }
+ .a-action-main p{
+	line-height:30px;
+font-size: 18px;
+padding: 0px 0px 0px 0px;
+text-align:left;
+font-weight:400;
+ }
+ .form-right{
+	padding: 20px 0px;
+ }
+ .form-slider{
+ margin:0px;
+ padding:0px 5px;
+ }
+ .talk-wrap{
+	width:100%;
+ }
+ .panel-title > a{
+	font-size: 16px;
+ }
+ .hide-on-top{
+	height:auto;
  }
  .slider-main h2{
 	font-size:30px;
  }
  .navbar-nav .button{
 	display:inline-block;
-	margin-left: 75px;
+	
  }
  .navbar-nav .header-phone{
+	text-align:center;
+ }
+ .form-left-title{
+	font-size:26px;
+ }
+ .button-foo, .s-f{
+	text-align: center;
+width: 80%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+ }
+ .s-f{
+ line-height: 32px;
+ }
+ .button-white{
+	height:auto;
+	width: 80%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+ }
+ .footer .column .foo-tel{
+	text-align:center;
+	width: 100%;
+ }
+ .social-wrap{
+	text-align:center;
+	width: 100%;
+ }
+ .footer .column{
+	display:block;
+	margin-bottom: 20px;
+ }
+ .nav>li{
 	text-align:center;
  }
 }

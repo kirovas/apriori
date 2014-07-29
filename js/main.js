@@ -87,3 +87,4 @@ $(document).ready(function() {
         }
     });
 });
+$(document).ready(function(){if($('input[name="phone"]').size()>0){$('input[name="phone"]').mask("+7(999)999-99-99");}});

@@ -18,6 +18,8 @@
 <script type="text/javascript" src="js/bootstrap.js" charset="utf-8"></script>
 <script type="text/javascript" src="js/bootstrapValidator.js"></script>
 <script type="text/javascript" src="js/jquery.countdown.js"></script>
+<script src="js/jquery.maskedinput.js" type="text/javascript"></script>
+<script src="js/jquery.nestedAccordion.js" type="text/javascript"></script>
 <!-- bxSlider Javascript file -->
 <script src="js/jquery.bxslider.js"></script>
 <!-- bxSlider CSS file -->
@@ -145,8 +147,10 @@
 		<div class="j-wrapper container">
 		
 			<div class="j-prices-button-wrap j-form-button-wrap"><a class="j-form-button j-prices-button" href="#">Цены на услуги</a></div>
-			<div class="j-prices-form j-form">
-			<div class="j-discount j-sprite">ваша скидка<span>-20%</span></div>
+			<div class="j-prices-form j-form ">
+			<!-- display from 768px to 1200px -->
+			<div class="for-dt">
+				<div class="j-discount j-sprite">ваша скидка<span>-20%</span></div>
 				<ul class="j-prices-lis col-md-8 col-md-offset-2 nav nav-tabs" role="tablist" id="mytab">
 					<li class="j-prices-li active" role="tab" data-toggle="tab" ><a href="#home">Парикмахерский зал</a></li>
 					<li class="j-prices-li" role="tab" data-toggle="tab" ><a href="#home2">Косметология</a></li>
@@ -405,6 +409,136 @@
 					
 					</div><!-- #3 end -->
 				</div><!-- tab content end -->
+				</div>
+			<!-- display only on mobile -->
+			<div class="for-m">
+			<script>
+			$(document).ready(function() {
+				$('#acc1').accordion({container:false, obj:'div', wrapper:'div', el: '.h', head:'h2, h3, h4', next:'div.outer'});
+				});
+			</script>
+			<div class="accordion" id="acc1">
+					<div class="new">
+					<h3 class="h">Парикмахерский зал</h3>
+					<div class="outer">
+						<h4 class="h">Стрижка</h4>
+						<div class="outer">
+						<div class="table-price" >
+						<div class="table-title">Стрижка горячими ножницами</div>
+							<table class="table table-striped " >
+								<tr>
+									<td class="col-md-8">Короткие волосы</td>
+									<td class="col-md-2">2000 <i class="fa fa-rub"></i></td>
+									<td class="col-md-2 red">1666 <i class="fa fa-rub"></i></td>
+								</tr>
+								<tr>
+									<td class="col-md-8">Средние волосы</td>
+									<td class="col-md-2">2000 <i class="fa fa-rub"></i></td>
+									<td class="col-md-2 red">1666 <i class="fa fa-rub"></i></td>
+								</tr>
+								<tr>
+									<td class="col-md-8">Длинные волосы</td>
+									<td class="col-md-2">2000 <i class="fa fa-rub"></i></td>
+									<td class="col-md-2 red">1666 <i class="fa fa-rub"></i></td>
+								</tr>
+								<tr>
+									<td class="col-md-8">Очень  длинные волосы</td>
+									<td class="col-md-2">2000 <i class="fa fa-rub"></i></td>
+									<td class="col-md-2 red">1666 <i class="fa fa-rub"></i></td>
+								</tr>
+							</table>
+							</div>
+						</div>
+						<h4 class="h">Укладка</h4>
+						<div class="outer">
+							<div class="table-price" >
+							<div class="table-title">Укладка феном</div>
+							<table class="table table-striped " >
+								<tr>
+									<td class="col-md-8">Короткие волосы</td>
+									<td class="col-md-2">2000 <i class="fa fa-rub"></i></td>
+									<td class="col-md-2 red">1666 <i class="fa fa-rub"></i></td>
+								</tr>
+								<tr>
+									<td class="col-md-8">Средние волосы</td>
+									<td class="col-md-2">2000 <i class="fa fa-rub"></i></td>
+									<td class="col-md-2 red">1666 <i class="fa fa-rub"></i></td>
+								</tr>
+								<tr>
+									<td class="col-md-8">Длинные волосы</td>
+									<td class="col-md-2">2000 <i class="fa fa-rub"></i></td>
+									<td class="col-md-2 red">1666 <i class="fa fa-rub"></i></td>
+								</tr>
+								<tr>
+									<td class="col-md-8">Очень  длинные волосы</td>
+									<td class="col-md-2">2000 <i class="fa fa-rub"></i></td>
+									<td class="col-md-2 red">1666 <i class="fa fa-rub"></i></td>
+								</tr>
+							</table>
+							</div>
+						</div>
+						<h4 class="h">Лечение и уход</h4>
+						<div class="outer">
+							<div class="table-price" >
+							<div class="table-title">Укладка феном</div>
+							<table class="table table-striped " >
+								<tr>
+									<td class="col-md-8">Короткие волосы</td>
+									<td class="col-md-2">2000 <i class="fa fa-rub"></i></td>
+									<td class="col-md-2 red">1666 <i class="fa fa-rub"></i></td>
+								</tr>
+								<tr>
+									<td class="col-md-8">Средние волосы</td>
+									<td class="col-md-2">2000 <i class="fa fa-rub"></i></td>
+									<td class="col-md-2 red">1666 <i class="fa fa-rub"></i></td>
+								</tr>
+								<tr>
+									<td class="col-md-8">Длинные волосы</td>
+									<td class="col-md-2">2000 <i class="fa fa-rub"></i></td>
+									<td class="col-md-2 red">1666 <i class="fa fa-rub"></i></td>
+								</tr>
+								<tr>
+									<td class="col-md-8">Очень  длинные волосы</td>
+									<td class="col-md-2">2000 <i class="fa fa-rub"></i></td>
+									<td class="col-md-2 red">1666 <i class="fa fa-rub"></i></td>
+								</tr>
+							</table>
+							</div>
+						</div>
+					</div>
+					</div>
+					<div class="new">
+					<h3 class="h">Косметология</h3>
+					<div class="outer">
+						<h4 class="h">Инъекционная</h4>
+						<div class="outer"></div>
+						<h4 class="h">Аппаратная </h4>  
+						<div class="outer"></div>
+						<h4 class="h">Терапевтическая  </h4> 
+						<div class="outer"></div>
+						<h4 class="h">Омоложение лица </h4>
+						<div class="outer"></div>
+						<h4 class="h">Уход за телом</h4>
+						<div class="outer"></div>
+					</div>
+					</div>
+					<div class="new">
+						<h3 class="h">Уход за руками и ногами</h3>
+						<div class="outer">
+						<h4 class="h">Инъекционная</h4>
+						<div class="outer"></div>
+						<h4 class="h">Аппаратная </h4>  
+						<div class="outer"></div>
+						<h4 class="h">Терапевтическая  </h4> 
+						<div class="outer"></div>
+						<h4 class="h">Омоложение лица </h4>
+						<div class="outer"></div>
+						<h4 class="h">Уход за телом</h4>
+						<div class="outer"></div>
+					</div>
+					</div>
+			</div><!-- .accordion -->
+			</div><!-- .for-m -->
 			</div>
 		</div>
 		<div class="j-prices-bottom"><div class="j-prices-bottom-center j-sprite"></div></div>

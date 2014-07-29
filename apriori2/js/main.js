@@ -30,6 +30,8 @@ $('.j-price-block-title a').click(function (e) {
 $('.more-photo a').bind('click', function(){
 	$(".more-photo-hide").slideToggle('slow');
 })
+
+
 });
 $(window).bind('scroll', function() {
          if ($(window).scrollTop() > 150 && $(window).width() > 960) {
@@ -253,3 +255,4 @@ $(function() {
     }
   });
 });
+
